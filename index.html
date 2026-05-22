@@ -209,18 +209,17 @@
   }
   .btn-accent:hover { background: rgba(167,139,250,0.2); color: #ddd; }
 
-  /* 水印 */
+  /* 水印 — 紧随标题 */
   .watermark {
-    position: fixed;
-    bottom: 28px;
-    right: 32px;
-    font-size: 15px;
-    color: rgba(255,255,255,0.07);
-    font-weight: 500;
-    letter-spacing: 4px;
+    display: inline;
+    font-size: 13px;
+    color: rgba(255,255,255,0.12);
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-left: 10px;
     pointer-events: none;
     user-select: none;
-    z-index: 100;
+    vertical-align: middle;
   }
 
   /* 结果面板 */
@@ -280,7 +279,7 @@
 <body>
 
 <div class="container">
-  <h1>高等数学 · 选择题测验</h1>
+  <h1>高等数学 · 选择题测验<span class="watermark">谭生城</span></h1>
   <p class="subtitle">共 10 题，每题 10 分，满分 100 分</p>
 
   <!-- 进度条 -->
@@ -314,8 +313,6 @@
     </div>
   </div>
 </div>
-
-<div class="watermark">谭生城</div>
 
 <script>
 // ============================================================
